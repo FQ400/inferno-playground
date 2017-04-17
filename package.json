@@ -1,0 +1,60 @@
+{
+  "name": "inferno-playground",
+  "version": "0.0.1",
+  "author": "FQ400",
+  "scripts": {
+    "clean": "rimraf ./dist/* && rimraf ./.happypack",
+    "start": "webpack-dev-server --inline --port 8080",
+    "dev": "npm start",
+    "test": "jest"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setup-test-framework.js",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.(css|scss)$": "jest-css-modules"
+    }
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "inferno": "^3.0.4",
+    "inferno-compat": "^3.0.4",
+    "inferno-component": "^3.0.4"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-inferno": "^3.2.0",
+    "babel-plugin-module-resolver": "^2.7.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-plugin-webpack-alias": "^2.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "baggage-loader": "^0.2.4",
+    "bootstrap-loader": "^2.0.0",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "fast-async": "^6.2.2",
+    "file-loader": "^0.11.1",
+    "happypack": "^3.0.3",
+    "html-webpack-plugin": "^2.28.0",
+    "inferno-test-utils": "^3.0.4",
+    "jest": "^19.0.2",
+    "jest-css-modules": "^1.1.0",
+    "node-sass": "^4.5.2",
+    "opn-cli": "^3.1.0",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^2.0.2",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "text-transform-loader": "^1.1.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
+  }
+}

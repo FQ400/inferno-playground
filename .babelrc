@@ -1,0 +1,21 @@
+{
+  "presets": ["es2015"],
+  "plugins": [
+    "add-module-exports",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    ["inferno", {"imports": true}],
+    "fast-async",
+    ["module-resolver", {
+      "root": ["./src/app", "./src/app/components"],
+      "alias": {
+        "react": "inferno-compat",
+        "react-dom": "inferno-compat"
+      }
+    }],
+    ["webpack-alias", {
+      "config": "./config/webpack.common.js"
+    }]
+  ]
+}
